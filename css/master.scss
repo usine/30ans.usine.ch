@@ -1,0 +1,34 @@
+---
+---
+
+$pink: deeppink;
+
+.text-pink {
+  color: $pink;
+}
+
+.bg-pink {
+  background-color: $pink;
+}
+
+.border-pink {
+  border-color: $pink !important;
+}
+
+.navbar-brand {
+  margin-right: 0;
+}
+
+.navbar-brand.active,
+.navbar-brand:hover {
+  text-decoration: line-through;
+  text-decoration-color: $pink;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.activity {
+  padding: .5rem;
+}

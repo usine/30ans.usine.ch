@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>L'Usine fête ses 30 ans</title>
+    <meta name="description" content="Du 27 au 29 septembre 2019, L’Usine fête ses trente ans.">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/master.css">
@@ -11,10 +12,19 @@
   <body>
     {{ content }}
 
-    <footer>
+    <footer class="mb-5 py-5 container">
       <a href="https://www.usine.ch/">
-        <img src="/img/usine-logo-30ans.svg" alt="Usine - 30 ans" class="img-fluid">
+        <img src="/img/usine-logo-30ans.svg" alt="Usine - 30 ans" class="img-fluid pb-3 px-3">
       </a>
     </footer>
+
+    <nav class="navbar fixed-bottom navbar-dark bg-black py-3">
+      <a class="navbar-brand px-2 {% if page.url == '/' %}active{% endif %}" href="/" style="height: 40px;">
+        <img src="/img/usine.svg" height="30" alt="">
+      </a>
+      <a class="navbar-brand px-2 {% if page.url == '/activites/' %}active{% endif %}" href="/activites">Activités</a>
+      <!-- <a class="navbar-brand {% if page.url == '/lieux' %}active{% endif %}" href="/lieux">Lieux</a> -->
+      <!-- <a class="navbar-brand" href="#">Affiches</a> -->
+    </nav>
   </body>
 </html>
