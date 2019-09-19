@@ -10,21 +10,58 @@
     <link rel="stylesheet" href="/css/master.css">
   </head>
   <body>
-    {{ content }}
-
-    <footer class="mb-5 py-5 container">
-      <a href="https://www.usine.ch/">
-        <img src="/img/usine-logo-30ans.svg" alt="Usine - 30 ans" class="img-fluid pb-3 px-3">
-      </a>
-    </footer>
-
-    <nav class="navbar fixed-bottom navbar-dark bg-black py-3">
+    <nav class="navbar navbar-dark bg-black py-3">
       <a class="navbar-brand px-2 {% if page.url == '/' %}active{% endif %}" href="/" style="height: 40px;">
         <img src="/img/usine.svg" height="30" alt="">
       </a>
       <a class="navbar-brand px-2 {% if page.url == '/activites/' %}active{% endif %}" href="/activites">Activités</a>
-      <!-- <a class="navbar-brand {% if page.url == '/lieux' %}active{% endif %}" href="/lieux">Lieux</a> -->
+      <a class="navbar-brand px-2 {% if page.url == '/lieux/' %}active{% endif %}" href="/lieux">Lieux</a>
       <!-- <a class="navbar-brand" href="#">Affiches</a> -->
     </nav>
+
+    {{ content }}
+
+    <div class="bg-pink py-5 border-top border-dark">
+      <section class="container">
+        <div class="row">
+          <div class="col-12 col-lg">
+            <p class="font-weight-bold lead">Usine & co</p>
+            <p>
+              Place des volontaires //
+              <br>
+              Rue de la Coulouvrenière //
+              <br>
+              Quai des Forces-motrices //
+            </p>
+          </div>
+          <div class="col-12 col-lg">
+            <p class="font-weight-bold lead">Horaires & tarifs</p>
+            <p>
+              ☉ VENDREDI NUIT - 21:00 - 08:00 ☉
+              <br>
+              ♢ PASS 30H A 15 CHF ♢
+              <br>
+              Valable de vendredi 21h à dimanche 6h
+            </p>
+            <p>
+              ☉ SAMEDI JOUR - 08:00 - 22:00 ☉
+              <br>
+              ♢ ENTREE AVEC PASS 30H OU PRIX LIBRE ♢
+            </p>
+            <p>
+              ☉ SAMEDI NUIT - 22:00 - 06:00 ☉
+              <br>
+              ♢ PASS 30H A 15 CHF ♢
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="py-5 container">
+      <a href="https://www.usine.ch/">
+        <img src="/img/usine-logo-30ans.svg" alt="Usine - 30 ans" class="img-fluid">
+      </a>
+    </footer>
   </body>
 </html>
