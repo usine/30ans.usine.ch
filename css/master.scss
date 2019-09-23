@@ -1,10 +1,25 @@
 ---
 ---
 
+$black: #212529;
 $pink: #ed6ea7;
+
+.btn-outline-pink {
+  color: $pink;
+  border-color: $pink;
+}
+
+.btn-outline-pink:hover {
+  color: white;
+  background-color: $pink;
+}
 
 .text-pink {
   color: $pink;
+}
+
+.text-black {
+  color: $black;
 }
 
 .bg-pink {
@@ -29,6 +44,8 @@ $pink: #ed6ea7;
   background-color: black;
 }
 
-.activity {
+.activity > a {
+  color: $black;
   padding: .5rem;
+  display: block
 }
