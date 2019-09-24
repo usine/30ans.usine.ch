@@ -14,6 +14,16 @@ $pink: #ed6ea7;
   background-color: $pink;
 }
 
+.btn-outline-black {
+  color: $black;
+  border-color: $black;
+}
+
+.btn-outline-black:hover {
+  color: white;
+  background-color: $black;
+}
+
 .text-pink {
   color: $pink;
 }
